@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type='text/css'>
+    </head>
+
+    <body>
+        <div class ="my-drawing literally toolbar-at-top" id="row4">
+
+        <div class="lc-drawing with-gui" style="background-color:whitesmoke;">
+        <div id="canvas-container">
+            <canvas id="canvas-real" class="canvas" width="1314" height="734" style="width: 1314px; height: 734px;"></canvas>
+            <canvas id="canvas-draft" class="canvas" width="1314" height="734" style="background-color: transparent; width: 1314px; height: 734px;"></canvas>
+        </div>
+
+        </div>
+
+
+
+        <div class="lc-picker container">
+            <div class ="lc=picker-contents row" data-reactid=".0">
+
+                    <div class="col-md-1 col-xl-1">
+
+                    <div class="lc-pick-tool toolbar-button thin-button selected" id="drawing-pencil"
+                     title="Pencil" data-reactid=".0.0:$0"><i class="fas fa-pencil-alt fa-3x"></i></div>
+
+                     </div>
+
+                     <div class="col-md-1 col-xl-1">
+
+                     <div class="lc-pick-tool toolbar-button thin-button" id="drawing-eraser" 
+                     title="Eraser" data-reactid=".0.0:$1"><i class="fas fa-eraser fa-3x"></i></div>
+
+                     </div>
+
+                     <div class="col-md-1 col-xl-1">
+
+                     <div class="lc-pick-tool toolbar-button thin-button" id="drawing-line"
+                      title="Line" data-reactid=".0.0:$2"><i class="fas fa-minus fa-3x"></i></div>
+
+                      </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle-hollow"
+                      title="Rectangle Hollow" data-reactid=".0.0:$3"><i class="far fa-square fa-3x"></i></div>
+
+                      </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle"
+                      title="Rectangle" data-reactid=".0.0:$4"><i class="fas fa-square-full fa-3x"></i></div>
+
+                      </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle-hollow"
+                      title="Circle Hollow" data-reactid=".0.0:$5"><i class="far fa-circle fa-3x"></i></div>
+
+                      </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle"
+                      title="Circle" data-reactid=".0.0:$6"><i class="fas fa-circle fa-3x"></i></div>
+
+                      </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-polygon"
+                      title="Polygon" data-reactid=".0.0:$7"><i class="far fa-star fa-3x"></i></div>
+
+                      </div>
+
+                    <div class="col-md-1 col-xl-1">
+                    
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-quadratic-curve" 
+                        title="Quadratic Curve" data-reactid=".0.0:$8"> <i class="fab fa-uniregistry"></i>
+                        </div>
+                    
+                    </div>
+
+                      <div class="col-md-1 col-xl-1">
+
+                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-reset"
+                      title="Reset" data-reactid=".0.0:$9"><i class="far fa-trash-alt fa-3x"></i></div>
+
+                      </div>
+
+                        <div style="position:absolute;bottom:0;left:0;right:0;" data-reactid=".0.2" class="container" id="container2">
+                        <div class="lc-color-pickers row" data-reactid=".0.2.0" id="row2">
+                        
+                        
+                            <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.0">
+                                <label data-reactid=".0.2.0.0.0">stroke</label>
+                                <br data-reactid=".0.2.0.0.1">
+                                
+                                <div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.0.2">
+                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.0.2.0"></div>
+                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.0.2.1"></div>
+                                    <div class="color-well-color" style="background-color: rgb(0, 0, 0);" data-reactid=".0.2.0.0.2.2"></div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.1">
+                                <label data-reactid=".0.2.0.1.0">fill</label>
+                                <br data-reactid=".0.2.0.1.1">
+                        
+                                <div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.1.2">
+                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.1.2.0"></div>
+                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.1.2.1"></div>
+                                    <div class="color-well-color" style="background-color:hsla(0, 0%, 100%, 1);" data-reactid=".0.2.0.1.2.2"> </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.2">
+                                <label data-reactid=".0.2.0.2.0">bg</label>
+                                <br data-reactid=".0.2.0.2.1"
+                                
+                                ><div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.2.2">
+                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.2.2.0"></div>
+                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.2.2.1"></div>
+                                    <div class="color-well-color" style="background-color:whiteSmoke;" data-reactid=".0.2.0.2.2.2"> </div>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                                <div class="lc-undo-redo row" data-reactid=".0.2.1" id="row3">
+
+                                    <div>
+
+                                    <div class="lc-undo toolbar-button thin-button col-md-1 col-xl-1" 
+                                     data-reactid=".0.2.1.0"><i class="fas fa-undo"></i></div>
+
+                                     </div>
+
+                                     <div>
+
+                                     <label data-reactid=".0.2.0.0.0">undo</label>
+
+                                     </div>
+
+                                     <div>
+
+                                    <div class="lc-redo toolbar-button thin-button clo-md-1 col-xl-1" 
+                                     data-reactid=".0.2.1.1"><i class="fas fa-redo"></i></div>
+
+                                     </div>
+
+                                     <div>
+
+                                     <label data-reactid=".0.2.0.0.0">redo</label>
+
+                                     </div>
+                                     
+                                </div>
+                </div>
+                </div>
+
+    </div>
+    
+
+    <div>
+        <div class="lc-options horz-toolbar container ">
+            <div data-reactid=".1" class= "row" >
+                <div data-reactid=".1.$1" class="col-md-1 col-xl-1">
+                    <div class="square-toolbar-button" data-reactid=".1.$1.0">
+                        <svg width="26" height="26" version="1.1" data-reactid=".1.$1.0.0">
+                            <circle cx="13" cy="13" r="0.5" data-reactid=".1.$1.0.0.0">
+
+                            </circle>
+                        </svg>
+                    </div>
+                </div>
+
+            <div data-reactid=".1.$2" class="col-md-1 col-xl-1">
+                <div class="square-toolbar-button" data-reactid=".1.$2.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$2.0.0">
+                        <circle cx="13" cy="13" r="1" data-reactid=".1.$2.0.0.0">
+
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div data-reactid=".1.$5" class="col-md-1 col-xl-1">
+                <div class="square-toolbar-button selected" data-reactid=".1.$5.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$5.0.0">
+                        <circle cx="13" cy="13" r="2.5" data-reactid=".1.$5.0.0.0">
+
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            <div data-reactid=".1.$10" class="col-md-1 col-xl-1">
+                <div class="square-toolbar-button" data-reactid=".1.$10.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$10.0.0">
+                        <circle cx="13" cy="13" r="5" data-reactid=".1.$10.0.0.0">
+
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            <div data-reactid=".1.$20" class="col-md-1 col-xl-1">
+                <div class="square-toolbar-button" data-reactid=".1.$20.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$20.0.0">
+                        <circle cx="13" cy="13" r="10" data-reactid=".1.$20.0.0.0">
+
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            <div data-reactid=".1.$30" class="col-md-1 col-xl-1">
+                <div class="square-toolbar-button" data-reactid=".1.$30.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$30.0.0">
+                        <circle cx="13" cy="13" r="15" data-reactid=".1.$30.0.0.0">
+
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="square-toolbar-button" 
+            style="float:left;margin:1px;" data-reactid=".1.0">
+            <img src="images/dashed-line.png" data-reactid=".1.0.0" id="dotted">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+        <!-- jQuery, bootstrap, fontawesome -->
+        <script type='text/javascript' src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!-- custom js -->
+        <script type='text/javascript' src="canvas-common.js"></script>
+        <script type='text/javascript' src="drawing-rectangle.js"></script>
+        <script type='text/javascript' src="drawing-rectangle-hollow.js"></script>
+        <script type='text/javascript' src="drawing-circle.js"></script>
+        <script type='text/javascript' src="drawing-circle-hollow.js"></script>
+        <script type='text/javascript' src="drawing-line.js"></script>
+        <script type="text/javascript" src="drawing-polygon.js"></script>
+        <script type='text/javascript' src="drawing-pencil.js"></script>
+        <script type='text/javascript' src="drawing-eraser.js"></script>
+        <script type='text/javascript' src="drawing-quadratic-curve.js"></script>
+        <script type='text/javascript' src="drawing-reset.js"></script>
+
+        
+
+        <!-- button script -->
+        <script type='text/javascript'>
+            $('#drawing-rectangle').click(()=>{
+                currentFunction = new DrawingRectangle(contextReal,contextDraft);
+            });
+            $('#drawing-rectangle-hollow').click(()=>{
+                currentFunction = new DrawingRectangleHollow(contextReal,contextDraft);
+            });
+            $('#drawing-circle').click(()=>{
+                currentFunction = new DrawingCircle(contextReal,contextDraft);
+            });
+            $('#drawing-circle-hollow').click(()=>{
+                currentFunction = new DrawingCircleHollow(contextReal,contextDraft);
+            });
+            $('#drawing-line').click(()=>{
+                currentFunction = new DrawingLine(contextReal,contextDraft);
+            });
+            $('#drawing-polygon').click(()=>{
+                currentFunction = new DrawingPolygon(contextReal,contextDraft);
+            });
+            $('#drawing-pencil').click(()=>{
+                currentFunction = new DrawingPencil(contextReal,contextDraft);
+            });
+            $('#drawing-quadratic-curve').click(()=>{
+                currentFunction = new DrawingQuadraticCurve(contextReal,contextDraft);
+            });
+            $('#drawing-eraser').click(()=>{
+                currentFunction = new DrawingEraser(contextReal,contextDraft);
+            });
+            $('#drawing-reset').click(()=>{
+                currentFunction = new drawingReset(contextReal);
+            });
+
+            $('#drawing-background').click(()=>{
+               currentFunction = new drawingBackground(contextReal); 
+            });
+
+            currentFunction = new DrawingPencil(contextReal,contextDraft);
+               
+
+
+                var colorPurple = "#cb3594";
+                var colorGreen = "#659b41";
+                var colorYellow = "#ffcf33";
+                var colorBrown = "#986928";
+
+                var curColor = colorPurple;
+                var clickColor = new Array();
+
+                function addClick(x, y, dragging) {
+                    clickX.push(x);
+                    clickY.push(y);
+                    clickDrag.push(dragging);
+                    clickColor.push(curColor);
+                }
+
+                function redraw() {
+                    /* context.strokeStyle = "#df4b26"; */
+                    context.lineJoin = "round";
+                    context.lineWidth = 5;
+
+                    for (var i = 0; i < clickX.length; i++) {
+                        context.beginPath();
+                        if (clickDrag[i] && i) {
+                            contex.moveTo(clickX[i - 1], clickY[i - 1]);
+                        } else {
+                            context.moveTo(clickX[i] - 1, clickY[i]);
+                        }
+                        context.lineTo(clickX[i], clickY[i]);
+                        context.closePath();
+                        context.strokeStyle = clickColor[i];
+                        context.stroke();
+                    }
+
+                }
+            
+        </script>
+    </body>
+</html>
+
+
+
