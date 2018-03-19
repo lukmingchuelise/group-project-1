@@ -33,9 +33,9 @@ body{
 .literally {
     position: relative;
     background-color: #ddd;
-    min-height: 765px;
+    min-height: 795px;
     user-select: none;
-    width: 1436px;
+    width: 1466px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     margin-bottom:1em;
 }
@@ -88,9 +88,9 @@ body{
         background-color: #e6e6e6;
     }
 
-    .literally .lc-picker .toolbar-button.selected:not(.disabled) {
+    /* .literally .lc-picker .toolbar-button.selected:not(.disabled) {
         background-color: #a1d9fe;
-    }
+    } */
 
     .literally .lc-picker .lc-pick-tool, .literally .lc-picker .lc-undo, .literally .lc-picker .lc-redo, .literally .lc-picker .lc-zoom-in, .literally .lc-picker .lc-zoom-out
     {
@@ -149,39 +149,6 @@ body{
          text-align: center;
      }
   
-
-     .literally .color-well-color-container {
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .literally .color-well-color-container {
-        border: 2px solid transparent;
-        border-radius: 3px;
-        border: 1px solid #aaa;
-        position: relative;
-        width: 28px;
-        height: 28px;
-        margin: 1px auto;
-        overflow: visible;
-    }
-
-
-    .literally .color-well-color-container .color-well-checker-top-left {
-        border-top-left-radius: 3px;
-    }
-
-
-    .literally .color-well-color-container .color-well-checker {
-        position: absolute;
-        width: 50%;
-        height: 50%;
-        background-color: black;
-    }
-
-    .literally .color-well-color-container .color-well-checker-bottom-right {
-        border-bottom-right-radius: 3px;
-    }
 
 
     element.style {
@@ -352,3 +319,15 @@ body{
         width:26px;
         height:26px;
     }
+
+   
+    .svg-inline--fa.fa-w-14 {
+        width: 26px;
+        height: 26px;
+    }
+
+    .svg-inline--fa.fa-w-18 {
+        width: 26px;
+        height: 26px;
+    }
+   

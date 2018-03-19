@@ -13,8 +13,8 @@
 
         <div class="lc-drawing with-gui" style="background-color:whitesmoke;">
         <div id="canvas-container">
-            <canvas id="canvas-real" class="canvas" width="1314" height="734" style="width: 1314px; height: 734px;"></canvas>
-            <canvas id="canvas-draft" class="canvas" width="1314" height="734" style="background-color: transparent; width: 1314px; height: 734px;"></canvas>
+            <canvas id="canvas-real" class="canvas" width="1344" height="764" style="width: 1344px; height: 764px;"></canvas>
+            <canvas id="canvas-draft" class="canvas" width="1344" height="764" style="background-color: transparent; width: 1344px; height: 764px;"></canvas>
         </div>
 
         </div>
@@ -88,6 +88,22 @@
                     
                     </div>
 
+                    <div class="col-md-1 col-xl-1">
+                    
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-font" 
+                        title="Quadratic Curve" data-reactid=".0.0:$8"> <i class="fas fa-font"></i>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-md-1 col-xl-1">
+                    
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-ellipse" 
+                        title="Quadratic Curve" data-reactid=".0.0:$8"><i class="fas fa-toggle-off"></i>
+                        </div>
+                    
+                    </div>
+
                       <div class="col-md-1 col-xl-1">
 
                       <div class="lc-pick-tool toolbar-button thin-button" id="drawing-reset"
@@ -95,43 +111,43 @@
 
                       </div>
 
+                  
+
+
                         <div style="position:absolute;bottom:0;left:0;right:0;" data-reactid=".0.2" class="container" id="container2">
                         <div class="lc-color-pickers row" data-reactid=".0.2.0" id="row2">
                         
                         
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.0">
-                                <label data-reactid=".0.2.0.0.0">stroke</label>
-                                <br data-reactid=".0.2.0.0.1">
                                 
-                                <div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.0.2">
-                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.0.2.0"></div>
-                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.0.2.1"></div>
-                                    <div class="color-well-color" style="background-color: rgb(0, 0, 0);" data-reactid=".0.2.0.0.2.2"></div>
-                                </div>
+                                <!-- <br data-reactid=".0.2.0.0.1"> -->
+
+                                <button class="jscolor {valueElement:null,value:'000000'}" style="width:26px; height:26px;">
+                               
+                                </button>
+                                <label data-reactid=".0.2.0.0.0">stroke</label>
                             </div>
                         
-                        
+                            
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.1">
-                                <label data-reactid=".0.2.0.1.0">fill</label>
-                                <br data-reactid=".0.2.0.1.1">
                         
-                                <div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.1.2">
-                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.1.2.0"></div>
-                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.1.2.1"></div>
-                                    <div class="color-well-color" style="background-color:hsla(0, 0%, 100%, 1);" data-reactid=".0.2.0.1.2.2"> </div>
-                                </div>
+                                <!-- <br data-reactid=".0.2.0.1.1"> -->
+
+                                <button class="jscolor {valueElement:null,value:'ffffff'}" style="width:26px; height:26px;">
+                        
+                                </button>
+                                <label data-reactid=".0.2.0.0.0">fill</label>
                             </div>
                         
                         
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.2">
+                               
+                                <!-- <br data-reactid=".0.2.0.2.1"> -->
+
+                                <button class="jscolor {valueElement:null,value:'ffffff'}" style="width:26px; height:26px;">
+
+                                </button>
                                 <label data-reactid=".0.2.0.2.0">bg</label>
-                                <br data-reactid=".0.2.0.2.1"
-                                
-                                ><div class="color-well-color-container" style="background-color:white;" data-reactid=".0.2.0.2.2">
-                                    <div class="color-well-checker color-well-checker-top-left" data-reactid=".0.2.0.2.2.0"></div>
-                                    <div class="color-well-checker color-well-checker-bottom-right" style="left:50%;top:50%;" data-reactid=".0.2.0.2.2.1"></div>
-                                    <div class="color-well-color" style="background-color:whiteSmoke;" data-reactid=".0.2.0.2.2.2"> </div>
-                                </div>
                             </div>  
                         </div>
                         
@@ -175,7 +191,7 @@
             <div data-reactid=".1" class= "row" >
                 <div data-reactid=".1.$1" class="col-md-1 col-xl-1">
                     <div class="square-toolbar-button" data-reactid=".1.$1.0">
-                        <svg width="26" height="26" version="1.1" data-reactid=".1.$1.0.0">
+                        <svg width="26" height="26" version="1.1" data-reactid=".1.$1.0.0" id="width1">
                             <circle cx="13" cy="13" r="0.5" data-reactid=".1.$1.0.0.0">
 
                             </circle>
@@ -185,8 +201,8 @@
 
             <div data-reactid=".1.$2" class="col-md-1 col-xl-1">
                 <div class="square-toolbar-button" data-reactid=".1.$2.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$2.0.0">
-                        <circle cx="13" cy="13" r="1" data-reactid=".1.$2.0.0.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$2.0.0" id="width2">
+                        <circle cx="13" cy="13" r="1" data-reactid=".1.$2.0.0.0" >
 
                         </circle>
                     </svg>
@@ -195,7 +211,7 @@
 
             <div data-reactid=".1.$5" class="col-md-1 col-xl-1">
                 <div class="square-toolbar-button selected" data-reactid=".1.$5.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$5.0.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$5.0.0" id="width3">
                         <circle cx="13" cy="13" r="2.5" data-reactid=".1.$5.0.0.0">
 
                         </circle>
@@ -204,8 +220,8 @@
             </div>
             <div data-reactid=".1.$10" class="col-md-1 col-xl-1">
                 <div class="square-toolbar-button" data-reactid=".1.$10.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$10.0.0">
-                        <circle cx="13" cy="13" r="5" data-reactid=".1.$10.0.0.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$10.0.0" id"width4">
+                        <circle cx="13" cy="13" r="5" data-reactid=".1.$10.0.0.0" >
 
                         </circle>
                     </svg>
@@ -213,17 +229,17 @@
             </div>
             <div data-reactid=".1.$20" class="col-md-1 col-xl-1">
                 <div class="square-toolbar-button" data-reactid=".1.$20.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$20.0.0">
-                        <circle cx="13" cy="13" r="10" data-reactid=".1.$20.0.0.0">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$20.0.0" id="width5">
+                        <circle cx="13" cy="13" r="10" data-reactid=".1.$20.0.0.0" >
 
                         </circle>
                     </svg>
                 </div>
             </div>
             <div data-reactid=".1.$30" class="col-md-1 col-xl-1">
-                <div class="square-toolbar-button" data-reactid=".1.$30.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$30.0.0">
-                        <circle cx="13" cy="13" r="15" data-reactid=".1.$30.0.0.0">
+                <div class="square-toolbar-button" data-reactid=".1.$30.0"> 
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$30.0.0" id="width6">
+                        <circle cx="13" cy="13" r="15" data-reactid=".1.$30.0.0.0" >
 
                         </circle>
                     </svg>
@@ -237,6 +253,7 @@
         </div>
     </div>
     </div>
+
     </div>
 
 
@@ -248,6 +265,7 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <!-- custom js -->
+        <script src="jscolor.js"></script>
         <script type='text/javascript' src="canvas-common.js"></script>
         <script type='text/javascript' src="drawing-rectangle.js"></script>
         <script type='text/javascript' src="drawing-rectangle-hollow.js"></script>
@@ -258,6 +276,8 @@
         <script type='text/javascript' src="drawing-pencil.js"></script>
         <script type='text/javascript' src="drawing-eraser.js"></script>
         <script type='text/javascript' src="drawing-quadratic-curve.js"></script>
+        <script type='text/javascript' src="drawing-font.js"></script>
+        <script type='text/javascript' src="drawing-ellipse.js"></script>
         <script type='text/javascript' src="drawing-reset.js"></script>
 
         
@@ -299,44 +319,43 @@
                currentFunction = new drawingBackground(contextReal); 
             });
 
-            currentFunction = new DrawingPencil(contextReal,contextDraft);
+            $('#drawing-font').click(()=>{
+                currentFunction = new DrawingFont(contextReal,contextDraft);
+            });
+
+            $('#drawing-ellipse').click(()=>{
+                currentFunction = new DrawingEllipse(contextReal,contextDraft);
+            });
+
+            $('#width1').click(()=>{
+                lineWidth= 0.5 ;
+            });
+
+            $('#width2').click(()=>{ 
+                lineWidth= 1 ;
+            });
+
+            $('#width3').click(()=>{   
+                lineWidth= 2.5 ;
+            });
+
+            $('#width4').click(()=>{
+                lineWidth= 5 ;
+            });
+
+            $('#width5').click(()=>{
+                lineWidth= 10 ;
+            });
+            
+            $('#width6').click(()=>{
+                lineWidth= 15 ;
+            });
+
+
+
+
+             currentFunction = new DrawingPencil(contextReal,contextDraft);
                
-
-
-                var colorPurple = "#cb3594";
-                var colorGreen = "#659b41";
-                var colorYellow = "#ffcf33";
-                var colorBrown = "#986928";
-
-                var curColor = colorPurple;
-                var clickColor = new Array();
-
-                function addClick(x, y, dragging) {
-                    clickX.push(x);
-                    clickY.push(y);
-                    clickDrag.push(dragging);
-                    clickColor.push(curColor);
-                }
-
-                function redraw() {
-                    /* context.strokeStyle = "#df4b26"; */
-                    context.lineJoin = "round";
-                    context.lineWidth = 5;
-
-                    for (var i = 0; i < clickX.length; i++) {
-                        context.beginPath();
-                        if (clickDrag[i] && i) {
-                            contex.moveTo(clickX[i - 1], clickY[i - 1]);
-                        } else {
-                            context.moveTo(clickX[i] - 1, clickY[i]);
-                        }
-                        context.lineTo(clickX[i], clickY[i]);
-                        context.closePath();
-                        context.strokeStyle = clickColor[i];
-                        context.stroke();
-                    }
-
-                }
             
         </script>
     </body>
