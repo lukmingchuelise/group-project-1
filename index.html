@@ -5,6 +5,7 @@
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link href="jquerycolorpicker.css" rel="stylesheet" type='text/css'>
         <link href="style.css" rel="stylesheet" type='text/css'>
     </head>
 
@@ -120,36 +121,58 @@
                         
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.0">
                                 
-                                <!-- <br data-reactid=".0.2.0.0.1"> -->
+                                    <label for="color-input" id="color-label" style="background-color:#000000"></label>
+                                    <input type="checkbox" id="color-input" checked></input>
+                                    
+                                    <div id="color-picker">
 
-                                <button class="jscolor {valueElement:null,value:'000000'}" style="width:26px; height:26px;">
-                               
-                                </button>
+                                      <div>
+                                      <canvas id="color-block" height="150" width="150"></canvas>
+                                      <canvas id="color-strip" height="150" width="30"></canvas>
+                                      </div>
+                                    </div>
+                                   
                                 <label data-reactid=".0.2.0.0.0">stroke</label>
+                                 
                             </div>
-                        
                             
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.1">
-                        
-                                <!-- <br data-reactid=".0.2.0.1.1"> -->
 
-                                <button class="jscolor {valueElement:null,value:'ffffff'}" style="width:26px; height:26px;">
+                                    <label for="color-input" id="color-label" style="background-color:#ffffff"></label>
+                                    <input type="checkbox" id="color-input" checked></input>
+                                    
+                                    <div id="color-picker">
+                                      <div>
+                                      <canvas id="color-block" height="150" width="150"></canvas>
+                                      <canvas id="color-strip" height="150" width="30"></canvas>
+                                      </div>
+                                    </div>
+                                   
                         
-                                </button>
+                            
                                 <label data-reactid=".0.2.0.0.0">fill</label>
+                            
                             </div>
-                        
                         
                             <div class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.2">
                                
-                                <!-- <br data-reactid=".0.2.0.2.1"> -->
+                                    <label for="color-input" id="color-label" style="background-color:#ffffff"></label>
+                                    <input type="checkbox" id="color-input" checked></input>
+                                    
+                                    <div id="color-picker">
+                                      <div>
+                                      <canvas id="color-block" height="150" width="150"></canvas>
+                                      <canvas id="color-strip" height="150" width="30"></canvas>
+                                      </div>
+                                    </div>
+                                   
 
-                                <button class="jscolor {valueElement:null,value:'ffffff'}" style="width:26px; height:26px;">
-
-                                </button>
                                 <label data-reactid=".0.2.0.2.0">bg</label>
-                            </div>  
-                        </div>
+                            
+
+                              </div>
+
+                            </div>
                         
                                 <div class="lc-undo-redo row" data-reactid=".0.2.1" id="row3">
 
@@ -265,7 +288,7 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <!-- custom js -->
-        <script src="jscolor.js"></script>
+        <script src="jquerycolorpicker.js"></script>
         <script type='text/javascript' src="canvas-common.js"></script>
         <script type='text/javascript' src="drawing-rectangle.js"></script>
         <script type='text/javascript' src="drawing-rectangle-hollow.js"></script>
@@ -351,10 +374,10 @@
                 lineWidth= 15 ;
             });
 
-
-
-
              currentFunction = new DrawingPencil(contextReal,contextDraft);
+
+
+
                
             
         </script>
