@@ -76,8 +76,17 @@ function changeColor(e) {
   var imageData = ctx1.getImageData(x, y, 1, 1).data;
   rgbaColor = 'rgba(' + imageData[0] + ',' + imageData[1] + ',' + imageData[2] + ',1)';
   console.log(rgbaColor);
-//   colorLabel.style.backgroundColor = rgbaColor;
-}
+  if (stroke == true){
+      console.log("stroke");
+      strokeColor = rgbaColor;
+  }else if (fill == true){
+      console.log("fill");
+       fillColor = rgbaColor;
+      }
+  }
+  stroke=false;
+  fill=false;
+
 
 colorStrip.addEventListener("click", click, false);
 
