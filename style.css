@@ -33,9 +33,9 @@ body{
 .literally {
     position: relative;
     background-color: #ddd;
-    min-height: 795px;
+    min-height: 895px;
     user-select: none;
-    width: 1466px;
+    width: 1566px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     margin-bottom:1em;
 }
@@ -240,10 +240,24 @@ body{
         height:26px;
     }
 
+    #drawing-paint > svg {
+        width:26px;
+        height:26px;
+    }
+
+    #drawing-eye-dropper > svg{
+        width:26px;
+        height:26px;
+    }
+
+    #drawing-pencil-rotating-strokes > svg{
+        width:36px;
+        height:36px;
+    }
  
     .literally.toolbar-at-top .lc-options {
         top: 0;
-        border-bottom: 1px solid #555;
+
     }
     .literally .lc-options {
         z-index: 1;
@@ -252,7 +266,7 @@ body{
     }
     .literally .horz-toolbar {
         height: 31px;
-        background-color: #e6e6e6;
+        background-color: #ddd;
     }
     .literally>* {
         position: absolute;
@@ -297,11 +311,7 @@ body{
         cursor: pointer;
     }
 
-    /* circle>Attributes Style {
-        cx: 13;
-        cy: 13;
-        r: 0.5;
-    } */
+  
 
     user agent stylesheet
     * {
@@ -334,6 +344,41 @@ body{
     #width1, #width2, #width3, #width4, #width5, #width6, #dotted{
         opacity: 0;
     }
+
+
+
+    input[type="file"] {
+        position: absolute;
+        width: 4px;
+        height: 2px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+    .custom-file-upload {
+    
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+
+    #container2>div{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #drawing-undo>svg, #drawing-redo>svg, #drawing-zoom-in >svg, #drawing-zoom-out>svg{
+
+        width: 26px;
+        height: 26px;
+    
+    }
+
+    
   
-   
+
+    
   

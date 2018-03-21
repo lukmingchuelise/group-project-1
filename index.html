@@ -6,120 +6,237 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="jquerycolorpicker.css" rel="stylesheet" type='text/css'>
+        <link href="menuButton.css" rel="stylesheet" type='text/css'>
         <link href="style.css" rel="stylesheet" type='text/css'>
     </head>
 
     <body>
-        <div class ="my-drawing literally toolbar-at-top" id="row4">
+            <div class ="my-drawing literally toolbar-at-top" id="row4">
 
-        <div class="lc-drawing with-gui" style="background-color:whitesmoke;">
-        <div id="canvas-container">
-            <canvas id="canvas-real" class="canvas" width="1344" height="764" style="width: 1344px; height: 764px;"></canvas>
-            <canvas id="canvas-draft" class="canvas" width="1344" height="764" style="background-color: transparent; width: 1344px; height: 764px;"></canvas>
-        </div>
-
-        </div>
-
-
-
-        <div class="lc-picker container">
-            <div class ="lc=picker-contents row" data-reactid=".0">
-
+                    <div class="lc-drawing with-gui" style="background-color:whitesmoke;">
+                    <div id="canvas-container">
+                    <canvas id="canvas-real" class="canvas" width="1444" height="864" style="width: 1444px; height: 864px;"></canvas>
+                    <canvas id="canvas-draft" class="canvas" width="1444" height="864" style="background-color: transparent; width: 1444px; height: 864px;"></canvas>
+                    </div>
+                    
+                    </div>
+                    
+                    
+                    <div class="lc-picker container">
+                    <div class ="lc=picker-contents row" data-reactid=".0">
+                    
+                    <div class="row">
+                    
                     <div class="col-md-1 col-xl-1">
-
+                    
                     <div class="lc-pick-tool toolbar-button thin-button selected" id="drawing-pencil"
-                     title="Pencil" data-reactid=".0.0:$0"><i class="fas fa-pencil-alt fa-3x"></i></div>
-
-                     </div>
-
-                     <div class="col-md-1 col-xl-1">
-
-                     <div class="lc-pick-tool toolbar-button thin-button" id="drawing-eraser" 
-                     title="Eraser" data-reactid=".0.0:$1"><i class="fas fa-eraser fa-3x"></i></div>
-
-                     </div>
-
-                     <div class="col-md-1 col-xl-1">
-
-                     <div class="lc-pick-tool toolbar-button thin-button" id="drawing-line"
-                      title="Line" data-reactid=".0.0:$2"><i class="fas fa-minus fa-3x"></i></div>
-
-                      </div>
-
-                      <div class="col-md-1 col-xl-1">
-
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle-hollow"
-                      title="Rectangle Hollow" data-reactid=".0.0:$3"><i class="far fa-square fa-3x"></i></div>
-
-                      </div>
-
-                      <div class="col-md-1 col-xl-1">
-
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle"
-                      title="Rectangle" data-reactid=".0.0:$4"><i class="fas fa-square-full fa-3x"></i></div>
-
-                      </div>
-
-                      <div class="col-md-1 col-xl-1">
-
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle-hollow"
-                      title="Circle Hollow" data-reactid=".0.0:$5"><i class="far fa-circle fa-3x"></i></div>
-
-                      </div>
-
-                      <div class="col-md-1 col-xl-1">
-
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle"
-                      title="Circle" data-reactid=".0.0:$6"><i class="fas fa-circle fa-3x"></i></div>
-
-                      </div>
-
-                      <div class="col-md-1 col-xl-1">
-
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-polygon"
-                      title="Polygon" data-reactid=".0.0:$7"><i class="far fa-star fa-3x"></i></div>
-
-                      </div>
-
+                    title="Pencil" data-reactid=".0.0:$0"><i class="fas fa-pencil-alt fa-3x"></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-pencil-rotating-strokes"
+                    title="Pencil Rotating Strokes" data-reactid=".0.0:$8"><i class="fas fa-pen-square"></i>
+                    </div>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="row">
+                    
                     <div class="col-md-1 col-xl-1">
                     
-                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-quadratic-curve" 
-                        title="Quadratic Curve" data-reactid=".0.0:$8"> <i class="fab fa-uniregistry"></i>
-                        </div>
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-eraser" 
+                    title="Eraser" data-reactid=".0.0:$1"><i class="fas fa-eraser fa-3x"></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-line"
+                    title="Line" data-reactid=".0.0:$2"><i class="fas fa-minus fa-3x"></i></div>
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle-hollow"
+                    title="Rectangle Hollow" data-reactid=".0.0:$3"><i class="far fa-square fa-3x" style="height:30; width:30;"></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-rectangle"
+                    title="Rectangle" data-reactid=".0.0:$4"><i class="fas fa-square-full fa-3x" style="height:29; width:29;"></i></div>
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle-hollow"
+                    title="Circle Hollow" data-reactid=".0.0:$5"><i class="far fa-circle fa-3x" ></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-circle"
+                    title="Circle" data-reactid=".0.0:$6"><i class="fas fa-circle fa-3x"></i></div>
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-polygon"
+                    title="Polygon" data-reactid=".0.0:$7"><i class="far fa-star fa-3x"></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-quadratic-curve" 
+                    title="Quadratic Curve" data-reactid=".0.0:$8"> <i class="fab fa-uniregistry"></i>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-font" 
+                    title="Font" data-reactid=".0.0:$8"> <i class="fas fa-font"></i>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-ellipse" 
+                    title="Ellipse" data-reactid=".0.0:$8"><i class="fas fa-toggle-off"></i>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-paint"
+                    title="Paint" data-reactid=".0.0:$8"><i class="fas fa-tint fa-3x"></i>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-eye-dropper"
+                    title="Eye Dropper" data-reactid=".0.0:$8"><i class="fas fa-eye-dropper fa-3x"></i>
+                    </div>
+                    </div>
                     
                     </div>
 
-                    <div class="col-md-1 col-xl-1">
+
+
+                    <div class="row">
                     
-                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-font" 
-                        title="Font" data-reactid=".0.0:$8"> <i class="fas fa-font"></i>
+                        <div class="col-md-1 col-xl-1">
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-undo"
+                        title="Undo" data-reactid=".0.0:$8"><i class="fas fa-reply"></i>
                         </div>
-                    
+                        </div>
+                        
+                        <div class="col-md-1 col-xl-1">
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-redo"
+                        title="Redo" data-reactid=".0.0:$8"><i class="fas fa-share"></i>
+                        </div>
+                        </div>
+                        
                     </div>
 
-                    <div class="col-md-1 col-xl-1">
+                     <div class="row">
                     
-                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-ellipse" 
-                        title="Ellipse" data-reactid=".0.0:$8"><i class="fas fa-toggle-off"></i>
+                        <div class="col-md-1 col-xl-1">
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-zoom-in"
+                        title="Zoom In" data-reactid=".0.0:$8"><i class="fas fa-search-plus"></i>
                         </div>
-                    
+                        </div>
+                        
+                        <div class="col-md-1 col-xl-1">
+                        <div class="lc-pick-tool toolbar-button thin-button" id="drawing-zoom-out"
+                        title="Zoom Out" data-reactid=".0.0:$8"><i class="fas fa-search-minus"></i>
+                        </div>
+                        </div>
+                        
                     </div>
 
-                      <div class="col-md-1 col-xl-1">
+                    <div class="row">
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-reset"
+                    title="Reset" data-reactid=".0.0:$9"><i class="far fa-trash-alt fa-3x"></i></div>
+                    
+                    </div>
+                    
+                    <div class="col-md-1 col-xl-1">
+                    
+                    <div class="lc-pick-tool toolbar-button thin-button" id="drawing-save"
+                    title="Save" data-reactid=".0.0:$9"><i class="far fa-save"></i></div>
+                    </div>
 
-                      <div class="lc-pick-tool toolbar-button thin-button" id="drawing-reset"
-                      title="Reset" data-reactid=".0.0:$9"><i class="far fa-trash-alt fa-3x"></i></div>
+                    </div>
 
-                      </div>
+                    <div>
+
+                            <div id="toggle">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </div>
+                            
+                            <div type="button" id="menu">
+                                    <div class="col-2" id="drawing-filter-GY">
+                                            <button>GRAYSCALE</button>
+                                        </div>
+                                        <div class="col-2" id="drawing-filter-BRUP">
+                                            <button>BRIGHTNESS+</button>
+                                        </div>
+                                        <div class="col-2" id="drawing-filter-BRDN">
+                                            <button>BRIGHTNESS-</button>
+                                        </div>
+                                        
+                                        <div class="col-2" id="drawing-filter-threshold">
+                                            <button>THRESHOLD</button>
+                                        </div>
+                                        <div class="col-2" id="drawing-filter-convolute-sharpen">
+                                            <button>SHARPEN</button>
+                                        </div>
+                                        <div class="col-2" id="drawing-filter-convolute-blur">
+                                            <button>BLUR</button>
+                                        </div>
+                            </div>
+                    <div>
+                    
+
+                    <div class= "col-2">
+
+                            <label for="drawing-background" class="custom-file-upload">
+                                    <i class="fas fa-upload"></i> Background Upload
+                                </label>
+                                <input id="drawing-background" type="file"/>
+
+                    </div>
 
                       <div class="container" id="container2">
                         <div class="lc-color-pickers row"  id="row2">
                         
-                        
                             <div id="1" class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.0">
                                 
                                     <label for="color-input" id="color-label" style="background-color:#000000" class="b1"></label>
-                                    <input type="checkbox" id="color-input" checked></input>
+                                   
                 
                                     <div id="color-picker">
                                         <div>
@@ -128,52 +245,22 @@
                                         </div>
                                     </div>
                                     
-                                <label>stroke</label>
+                                   <label>stroke</label>
                                  
                             </div>
                             
                             <div id="2" class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.1">
                 
                                     <label for="color-input" id="color-label" style="background-color:#ffffff" class="b2"></label>
-                                    <input type="checkbox" id="color-input" checked></input>
-                
-                                    
                             
-                                <label>fill</label>
+                                    <label>fill</label>
                             
                             </div>
-                
-                            </div>
-                        
-                                <div class="lc-undo-redo row" data-reactid=".0.2.1" id="row3">
-                
-                                    <div>
-                
-                                    <div class="lc-undo toolbar-button thin-button col-md-1 col-xl-1" >
-                                     <i class="fas fa-undo"></i></div>
-                
-                                     </div>
-                
-                                     <div>
-                
-                                     <label>undo</label>
-                
-                                     </div>
-                
-                                     <div>
-                
-                                    <div class="lc-redo toolbar-button thin-button clo-md-1 col-xl-1">
-                                     <i class="fas fa-redo"></i></div>
-                
-                                     </div>
-                
-                                     <div>
-                
-                                     <label>redo</label>
-                
-                                     </div>
-                                     
-                                </div>
+                        </div>
+                        </div> 
+
+                    </div>
+                           
                 </div>
                 </div>
 
@@ -265,66 +352,32 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <!-- custom js -->
         <script src="jquerycolorpicker.js"></script>
-        <script type='text/javascript' src="canvas-common.js"></script>
-        <script type='text/javascript' src="drawing-rectangle.js"></script>
-        <script type='text/javascript' src="drawing-rectangle-hollow.js"></script>
-        <script type='text/javascript' src="drawing-circle.js"></script>
-        <script type='text/javascript' src="drawing-circle-hollow.js"></script>
-        <script type='text/javascript' src="drawing-line.js"></script>
-        <script type="text/javascript" src="drawing-polygon.js"></script>
-        <script type='text/javascript' src="drawing-pencil.js"></script>
-        <script type='text/javascript' src="drawing-eraser.js"></script>
-        <script type='text/javascript' src="drawing-quadratic-curve.js"></script>
-        <script type='text/javascript' src="drawing-font.js"></script>
-        <script type='text/javascript' src="drawing-ellipse.js"></script>
-        <script type='text/javascript' src="drawing-reset.js"></script>
+        <script src="menuButton.js"></script>
+        <script type='text/javascript' src="assets/js/canvas-common.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-rectangle.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-quadratic-curve.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-circle.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-ellipse.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-line.js"></script>
+        <script type="text/javascript" src="assets/js/drawing-polygon.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-pencil.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-pencil-rotating-strokes.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-font.js"></script>
+        <script type='text/javascript' src="assets/js/CanvasInput.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-paint.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-eye-dropper.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-eraser.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-reset.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-undo-redo.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-save.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-background.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-filter.js"></script>
+        <script type='text/javascript' src="assets/js/drawing-buttons.js"></script>
 
         
 
         <!-- button script -->
         <script type='text/javascript'>
-            $('#drawing-rectangle').click(()=>{
-                currentFunction = new DrawingRectangle(contextReal,contextDraft);
-            });
-            $('#drawing-rectangle-hollow').click(()=>{
-                currentFunction = new DrawingRectangleHollow(contextReal,contextDraft);
-            });
-            $('#drawing-circle').click(()=>{
-                currentFunction = new DrawingCircle(contextReal,contextDraft);
-            });
-            $('#drawing-circle-hollow').click(()=>{
-                currentFunction = new DrawingCircleHollow(contextReal,contextDraft);
-            });
-            $('#drawing-line').click(()=>{
-                currentFunction = new DrawingLine(contextReal,contextDraft);
-            });
-            $('#drawing-polygon').click(()=>{
-                currentFunction = new DrawingPolygon(contextReal,contextDraft);
-            });
-            $('#drawing-pencil').click(()=>{
-                currentFunction = new DrawingPencil(contextReal,contextDraft);
-            });
-            $('#drawing-quadratic-curve').click(()=>{
-                currentFunction = new DrawingQuadraticCurve(contextReal,contextDraft);
-            });
-            $('#drawing-eraser').click(()=>{
-                currentFunction = new DrawingEraser(contextReal,contextDraft);
-            });
-            $('#drawing-reset').click(()=>{
-                currentFunction = new drawingReset(contextReal);
-            });
-
-            $('#drawing-background').click(()=>{
-               currentFunction = new drawingBackground(contextReal); 
-            });
-
-            $('#drawing-font').click(()=>{
-                currentFunction = new DrawingFont(contextReal,contextDraft);
-            });
-
-            $('#drawing-ellipse').click(()=>{
-                currentFunction = new DrawingEllipse(contextReal,contextDraft);
-            });
 
             $('#width1').click(()=>{
                 lineWidth= 0.5 ;
@@ -390,18 +443,21 @@
             });
 
 
-            $('#drawing-rectangle, #drawing-rectangle-hollow, #drawing-circle, #drawing-circle-hollow, #drawing-font').on("click", function(){
+            $('#drawing-rectangle, #drawing-rectangle-hollow, #drawing-circle,#drawing-circle-hollow, #drawing-pencil-rotating-strokes, #drawing-font,#drawing-paint,#drawing-ellipse,#drawing-eye-dropper,#drawing-reset,#drawing-save').on("click", function(){
                     $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");
                      
             });
 
-               
+            $('#drawing-undo, #drawing-redo, #drawing-zoom-in, #drawing-zoom-out, #drawing-reset, #drawing-save, #drawing-background, #toggle, #1,#2').on("click", function(){
             
+                    $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");
+
+            });
 
 
 
 
-             currentFunction = new DrawingPencil(contextReal,contextDraft);
+
 
 
 
