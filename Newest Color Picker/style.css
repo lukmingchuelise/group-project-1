@@ -315,7 +315,7 @@ body{
         
     }  
 
-    #dotted{
+    #dottedPicture{
         width:26px;
         height:26px;
     }
@@ -330,5 +330,10 @@ body{
         width: 26px;
         height: 26px;
     }
+
+    #width1, #width2, #width3, #width4, #width5, #width6, #dotted{
+        opacity: 0;
+    }
+  
    
   

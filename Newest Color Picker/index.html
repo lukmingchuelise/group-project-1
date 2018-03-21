@@ -92,7 +92,7 @@
                     <div class="col-md-1 col-xl-1">
                     
                         <div class="lc-pick-tool toolbar-button thin-button" id="drawing-font" 
-                        title="Quadratic Curve" data-reactid=".0.0:$8"> <i class="fas fa-font"></i>
+                        title="Font" data-reactid=".0.0:$8"> <i class="fas fa-font"></i>
                         </div>
                     
                     </div>
@@ -100,7 +100,7 @@
                     <div class="col-md-1 col-xl-1">
                     
                         <div class="lc-pick-tool toolbar-button thin-button" id="drawing-ellipse" 
-                        title="Quadratic Curve" data-reactid=".0.0:$8"><i class="fas fa-toggle-off"></i>
+                        title="Ellipse" data-reactid=".0.0:$8"><i class="fas fa-toggle-off"></i>
                         </div>
                     
                     </div>
@@ -112,18 +112,15 @@
 
                       </div>
 
-                  
-
-
-                        <div style="position:absolute;bottom:0;left:0;right:0;" data-reactid=".0.2" class="container" id="container2">
-                        <div class="lc-color-pickers row" data-reactid=".0.2.0" id="row2">
+                      <div class="container" id="container2">
+                        <div class="lc-color-pickers row"  id="row2">
                         
                         
                             <div id="1" class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.0">
                                 
                                     <label for="color-input" id="color-label" style="background-color:#000000" class="b1"></label>
                                     <input type="checkbox" id="color-input" checked></input>
-
+                
                                     <div id="color-picker">
                                         <div>
                                             <canvas id="color-block" height="150" width="150"></canvas>
@@ -131,54 +128,55 @@
                                         </div>
                                     </div>
                                     
-                                <label data-reactid=".0.2.0.0.0">stroke</label>
+                                <label>stroke</label>
                                  
                             </div>
                             
                             <div id="2" class="color-well col-md-1 col-xl-1" style="float:left;text-align:center;" data-reactid=".0.2.0.1">
-
+                
                                     <label for="color-input" id="color-label" style="background-color:#ffffff" class="b2"></label>
                                     <input type="checkbox" id="color-input" checked></input>
-
+                
                                     
                             
-                                <label data-reactid=".0.2.0.0.0">fill</label>
+                                <label>fill</label>
                             
                             </div>
-
+                
                             </div>
                         
                                 <div class="lc-undo-redo row" data-reactid=".0.2.1" id="row3">
-
+                
                                     <div>
-
-                                    <div class="lc-undo toolbar-button thin-button col-md-1 col-xl-1" 
-                                     data-reactid=".0.2.1.0"><i class="fas fa-undo"></i></div>
-
+                
+                                    <div class="lc-undo toolbar-button thin-button col-md-1 col-xl-1" >
+                                     <i class="fas fa-undo"></i></div>
+                
                                      </div>
-
+                
                                      <div>
-
-                                     <label data-reactid=".0.2.0.0.0">undo</label>
-
+                
+                                     <label>undo</label>
+                
                                      </div>
-
+                
                                      <div>
-
-                                    <div class="lc-redo toolbar-button thin-button clo-md-1 col-xl-1" 
-                                     data-reactid=".0.2.1.1"><i class="fas fa-redo"></i></div>
-
+                
+                                    <div class="lc-redo toolbar-button thin-button clo-md-1 col-xl-1">
+                                     <i class="fas fa-redo"></i></div>
+                
                                      </div>
-
+                
                                      <div>
-
-                                     <label data-reactid=".0.2.0.0.0">redo</label>
-
+                
+                                     <label>redo</label>
+                
                                      </div>
                                      
                                 </div>
                 </div>
                 </div>
+
 
     </div>
     
@@ -186,9 +184,9 @@
     <div>
         <div class="lc-options horz-toolbar container ">
             <div data-reactid=".1" class= "row" >
-                <div data-reactid=".1.$1" class="col-md-1 col-xl-1">
+                <div data-reactid=".1.$1" class="col-md-1 col-xl-1" id="width1">
                     <div class="square-toolbar-button" data-reactid=".1.$1.0">
-                        <svg width="26" height="26" version="1.1" data-reactid=".1.$1.0.0" id="width1">
+                        <svg width="26" height="26" version="1.1" data-reactid=".1.$1.0.0" >
                             <circle cx="13" cy="13" r="0.5" data-reactid=".1.$1.0.0.0">
 
                             </circle>
@@ -196,9 +194,9 @@
                     </div>
                 </div>
 
-            <div data-reactid=".1.$2" class="col-md-1 col-xl-1">
+            <div data-reactid=".1.$2" class="col-md-1 col-xl-1" id="width2">
                 <div class="square-toolbar-button" data-reactid=".1.$2.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$2.0.0" id="width2">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$2.0.0">
                         <circle cx="13" cy="13" r="1" data-reactid=".1.$2.0.0.0" >
 
                         </circle>
@@ -206,36 +204,36 @@
                 </div>
             </div>
 
-            <div data-reactid=".1.$5" class="col-md-1 col-xl-1">
+            <div data-reactid=".1.$5" class="col-md-1 col-xl-1" id="width3">
                 <div class="square-toolbar-button selected" data-reactid=".1.$5.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$5.0.0" id="width3">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$5.0.0">
                         <circle cx="13" cy="13" r="2.5" data-reactid=".1.$5.0.0.0">
 
                         </circle>
                     </svg>
                 </div>
             </div>
-            <div data-reactid=".1.$10" class="col-md-1 col-xl-1">
+            <div data-reactid=".1.$10" class="col-md-1 col-xl-1" id="width4">
                 <div class="square-toolbar-button" data-reactid=".1.$10.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$10.0.0" id"width4">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$10.0.0">
                         <circle cx="13" cy="13" r="5" data-reactid=".1.$10.0.0.0" >
 
                         </circle>
                     </svg>
                 </div>
             </div>
-            <div data-reactid=".1.$20" class="col-md-1 col-xl-1">
+            <div data-reactid=".1.$20" class="col-md-1 col-xl-1" id="width5">
                 <div class="square-toolbar-button" data-reactid=".1.$20.0">
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$20.0.0" id="width5">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$20.0.0">
                         <circle cx="13" cy="13" r="10" data-reactid=".1.$20.0.0.0" >
 
                         </circle>
                     </svg>
                 </div>
             </div>
-            <div data-reactid=".1.$30" class="col-md-1 col-xl-1">
+            <div data-reactid=".1.$30" class="col-md-1 col-xl-1" id="width6">
                 <div class="square-toolbar-button" data-reactid=".1.$30.0"> 
-                    <svg width="26" height="26" version="1.1" data-reactid=".1.$30.0.0" id="width6">
+                    <svg width="26" height="26" version="1.1" data-reactid=".1.$30.0.0">
                         <circle cx="13" cy="13" r="15" data-reactid=".1.$30.0.0.0" >
 
                         </circle>
@@ -244,14 +242,18 @@
             </div>
 
             <div class="square-toolbar-button" 
-            style="float:left;margin:1px;" data-reactid=".1.0">
-            <img src="images/dashed-line.png" data-reactid=".1.0.0" id="dotted">
+            style="float:left;margin:1px;" data-reactid=".1.0"class="col-md-1 col-xl-a" id="dotted">
+            <img src="images/dashed-line.png" data-reactid=".1.0.0" id="dottedPicture">
         </div>
         </div>
     </div>
     </div>
 
     </div>
+
+    
+
+    
 
 
 
@@ -348,13 +350,12 @@
                 lineWidth= 15 ;
             });
 
-            //  $('#dotted').click(()=>{
+             $('#dotted').click(()=>{
 
-            //     let linedash = context.getLineDash();
-    
-            //     context.lineDashOffset = 2;
+                let lineDash;
+                lineDash = true;
 
-            // });
+            });
 
             
                 $(".b1").on("click", function(event){
@@ -371,12 +372,27 @@
 
                 $(".b1, .b2").on("click", function(){
                     $('#color-picker').css("opacity","100")
-        
             });
 
              $(".b1, .b2").on("dblclick", function(){
                     $('#color-picker').css("opacity","0")
         
+            });
+        
+            $('#drawing-pencil, #drawing-eraser, #drawing-polygon, #drawing-quadratic-curve').on("click", function(){
+                    $('#width1, #width2, #width3, #width4, #width5, #width6').css("opacity","100");
+                    $('#dotted').css("opacity","0");
+                    lineDash =false; 
+            });
+
+            $('#drawing-line').on("click", function(){
+                    $('#width1, #width2, #width3, #width4, #width5, #width6, #dotted').css("opacity","100")
+            });
+
+
+            $('#drawing-rectangle, #drawing-rectangle-hollow, #drawing-circle, #drawing-circle-hollow, #drawing-font').on("click", function(){
+                    $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");
+                     
             });
 
                
