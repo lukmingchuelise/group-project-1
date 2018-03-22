@@ -25,7 +25,7 @@ class DrawingFont extends PaintFunction{
 
 // init canvas-text, creat txt field
 function initDrawingFont(x, y, w, bgColor){
-    $("#canvas-container").append('<canvas id="canvas-text" class="canvas" width="1280px" height="720px"></canvas>');
+    $("#canvas-container").append('<canvas id="canvas-text" class="canvas" width="1280px" height="720px" style="z-index: 3;"></canvas>');
     currentFunction = new CanvasInput({
         canvas: document.getElementById('canvas-text'),
         fontSize: 28,
@@ -55,6 +55,7 @@ function print(value, x, y, w){
     contextReal.fillText(`${value}`, x, y+45);   // offset, not sure why
     // kill canvas-text
     $("#canvas-text").remove();
+    cPush();
     currentFunction = new DrawingFont(contextReal,contextDraft);
 }
 

@@ -1,4 +1,4 @@
-class drawingReset extends PaintFunction{
+class DrawingReset extends PaintFunction{
     constructor(contextReal){
         super();
         this.contextReal = contextReal;
@@ -7,12 +7,13 @@ class drawingReset extends PaintFunction{
     
     reset(event){
         this.contextReal.clearRect(0,0,canvasDraft.width,canvasDraft.height);
+        cPush();
     }
 
-    onMouseDown(){}
-    onDragging(){}
-    onMouseMove(){}
-    onMouseUp(){}
-    onMouseLeave(){}
-    onMouseEnter(){}
+    // onMouseDown(){}
+    // onDragging(){}
+    // onMouseMove(){}
+    // onMouseUp(){}
+    // onMouseLeave(){}
+    // onMouseEnter(){}
 }

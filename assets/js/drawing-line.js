@@ -44,8 +44,9 @@ class DrawingLine extends PaintFunction{
     }
 
     drawReal(x,y){
+        console.log("lineDash = ", lineDash);
         if (lineDash){
-            this.contextReal.setLineDash([2,8]);
+            this.contextReal.setLineDash([5,10]);
         }
         this.contextReal.beginPath();
         this.contextReal.moveTo(this.origX, this.origY);
@@ -57,5 +58,3 @@ class DrawingLine extends PaintFunction{
         }
     }
 }
-
-
