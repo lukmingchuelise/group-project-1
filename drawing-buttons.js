@@ -162,5 +162,14 @@ $('#drawing-undo, #drawing-redo, #drawing-zoom-in, #drawing-zoom-out, #drawing-r
     $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");
 });
 
+$('#drawing-font').on("click", function(){
+    $('#size1, #size2, #size3, #size4, #size5, #family1, #family2').css("opacity","100");
+});
+
+$('#drawing-font').on("dblclick",function(){
+
+    $('#size1, #size2, #size3, #size4, #size5, #family1, #family2').css("opacity","0");
+
+});
 
 

@@ -9,8 +9,10 @@ button {
 
 #size1, #size2, #size3, #size4, #size5, #family1, #family2{
     font-size: 1.5em;
-    /* opacity: 0; */
+    opacity: 0;
 }
+
+
 
 
 
