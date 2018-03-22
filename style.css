@@ -35,8 +35,7 @@ body{
     background-color: #ddd;
     min-height: 895px;
     user-select: none;
-    width: 1566px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 1606px;
     margin-bottom:1em;
 }
     
@@ -54,7 +53,7 @@ body{
 
 .literally .lc-drawing.with-gui {
     right: 0;
-    left: 122px;
+    left: 162px;
     cursor: default;
 
 }
@@ -84,7 +83,7 @@ body{
         top: 0;
         left: 0;
         bottom: 0;
-        width: 122px;
+        width: 162px;
         background-color: #e6e6e6;
     }
 
@@ -136,7 +135,7 @@ body{
     .literally .color-well {
         font-size: 10px;
         float: left;
-        width: 60px;
+        width: 80px;
     }
 
     label {
@@ -262,7 +261,7 @@ body{
     .literally .lc-options {
         z-index: 1;
         right: 0;
-        left: 123px;
+        left: 162px;
     }
     .literally .horz-toolbar {
         height: 31px;
@@ -280,13 +279,20 @@ body{
     .literally .horz-toolbar .square-toolbar-button {
         border: 2px solid transparent;
         border-radius: 3px;
-        margin: 1px;
+        margin-right: 1px;
         border: 1px solid #aaa;
         width: 28px;
         height: 28px;
         float: left;
         position: relative;
     }
+
+       
+      .horz-toolbar{
+        position:relative;
+        right: 162px;
+     } 
+
 
     svg>Attributes Style {
         width: 26;
@@ -306,24 +312,13 @@ body{
         transform-origin: 0px 0px 0px;
     }
 
-    .literally .horz-toolbar .square-toolbar-button {
-        text-decoration: none;
-        cursor: pointer;
-    }
 
-  
 
     user agent stylesheet
     * {
         transform-origin: 0px 0px 0px;
     }
-
-     
-    .horz-toolbar{
-        position:relative;
-        right: 123px;
-        
-    }  
+   
 
     #dottedPicture{
         width:26px;
@@ -375,10 +370,16 @@ body{
         width: 26px;
         height: 26px;
     
+    } 
+
+    #drawing-pencil-random-dots > svg, #drawing-pencil-rotating-stars>svg, #drawing-polygon>svg {
+        width: 30px;
+        height: 30px;
+
     }
 
-    
-  
+
+   
 
     
   

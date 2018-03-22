@@ -4,17 +4,6 @@ let canvasDraft = document.getElementById('canvas-draft');
 let contextDraft = canvasDraft.getContext('2d');
 let currentFunction;
 let dragging = false;
-let background = "#ffffff";
-let strokeColor = "rgba(22, 232, 199, 1)";
-let fillColor = "rgba(38, 255, 37, 0.5)";       // "rgba(128, 139, 255, 0)" = white, transparent
-let hollow;                                     // depends on input, need check mechanism
-let lineWidth = 2;                              // 1.0 up
-let lineJoin = "round";  
-let chosenColor = rgbaColor;
-let stroke, fill;
-
-
-
 
 $('#canvas-draft').mousedown(function(e){
     let mouseX = e.offsetX;
@@ -42,10 +31,19 @@ $('#canvas-draft').mouseup(function(e){
 });
 
 $('#canvas-draft').mouseleave(function(e){
-    dragging = false;
-    let mouseX = e.offsetX;
-    let mouseY = e.offsetY;
-    currentFunction.onMouseLeave([mouseX,mouseY],e);
+    if (dragging)
+    {
+        let mouseX = canvasDraft.width + canvasDraft.offsetLeft;
+        let mouseY = canvasDraft.height + canvasDraft.offsetTop;
+        currentFunction.onMouseLeave([mouseX,mouseY],e);
+    }
+    else
+    {
+        dragging = false;
+        let mouseX = e.offsetX;
+        let mouseY = e.offsetY;
+        currentFunction.onMouseLeave([mouseX,mouseY],e);
+    }
 });
 
 $('#canvas-draft').mouseenter(function(e){
@@ -53,12 +51,6 @@ $('#canvas-draft').mouseenter(function(e){
     let mouseY = e.offsetY;
     currentFunction.onMouseEnter([mouseX,mouseY],e);
 });
-
-// $('#canvas-draft').dblclick(function(e){
-//     let mouseX = e.offsetX;
-//     let mouseY = e.offsetY;
-//     currentFunction.onDoubleClick([mouseX,mouseY],e);
-// });
 
 class PaintFunction{
     constructor(){}
@@ -68,5 +60,31 @@ class PaintFunction{
     onMouseUp(){}
     onMouseLeave(){}
     onMouseEnter(){}
-    // onDoubleClick(){}
 }
+
+// global var
+// functional
+let hollow;                                     // depends on input, need check mechanism
+let outbound = false;                           // prevent stuck when mouse-out
+
+// line
+let lineWidth = 5;                              // 1.0 up
+let lineJoin = "round";                         // "bevel" || "round" || "miter"
+let lineDash = false;
+
+//color
+// let paintColor = {r: 255, g: 255, b:255, a: 1};  // for drawing-paint.js
+let background = "whitesmoke";      // CSS style string
+let strokeColor = "hsl(199, 50%,50%)";
+let fillColor = "rgba(255, 0, 44, 1)";       // "rgba(128, 139, 255, 0)" = white, transparent
+
+//font
+var textAlign = "start";
+var textBaseline = "bottom";
+var fontSize = "48px";
+var fontFamily = "Georgia";
+var fontColor = "black";
+
+//color pad
+let chosenColor = rgbaColor;
+let stroke, fill;

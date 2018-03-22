@@ -1,0 +1,166 @@
+$(document).ready(()=>{
+    currentFunction = new DrawingLine(contextReal,contextDraft);
+});
+$('#drawing-rectangle').click(()=>{
+    hollow = false;     // to be set by fillcolor
+    currentFunction = new DrawingRectangle(contextReal,contextDraft);
+});
+$('#drawing-rectangle-hollow').click(()=>{
+    hollow = true;      // to be set by fillcolor
+    currentFunction = new DrawingRectangle(contextReal,contextDraft);
+});
+$('#drawing-quadratic-curve').click(()=>{
+    currentFunction = new DrawingQuadraticCurve(contextReal,contextDraft);
+});
+$('#drawing-circle').click(()=>{
+    hollow = false;     // to be set by fillcolor
+    currentFunction = new DrawingCircle(contextReal,contextDraft);
+});
+$('#drawing-circle-hollow').click(()=>{
+    hollow = true;      // to be set by fillcolor
+    currentFunction = new DrawingCircle(contextReal,contextDraft);
+});
+$('#drawing-ellipse').click(()=>{
+    currentFunction = new DrawingEllipse(contextReal,contextDraft);
+});
+$('#drawing-line').click(()=>{
+    currentFunction = new DrawingLine(contextReal,contextDraft);
+});
+$('#drawing-polygon').click(()=>{
+    currentFunction = new DrawingPolygon(contextReal,contextDraft);
+});
+$('#drawing-pencil').click(()=>{
+    currentFunction = new DrawingPencil(contextReal,contextDraft);
+});
+$('#drawing-pencil-rotating-strokes').click(()=>{
+    currentFunction = new DrawingPencilRotatingStrokes(contextReal,contextDraft);
+});
+$('#drawing-pencil-rotating-stars').click(()=>{
+    currentFunction = new DrawingPencilRotatingStars(contextReal,contextDraft);
+});
+$('#drawing-pencil-random-dots').click(()=>{
+    currentFunction = new DrawingPencilRandomDots(contextReal,contextDraft);
+});
+$('#drawing-font').click(()=>{
+    currentFunction = new DrawingFont(contextReal,contextDraft);
+});
+$('#drawing-paint').click(()=>{
+    currentFunction = new DrawingPaint(contextReal,contextDraft);
+});
+$('#drawing-eye-dropper').click(()=>{
+    currentFunction = new DrawingEyeDropper(contextReal,contextDraft);
+});
+$('#drawing-eraser').click(()=>{
+    currentFunction = new DrawingEraser(contextReal,contextDraft);
+});
+$('#drawing-reset').click(()=>{
+    currentFunction = new DrawingReset(contextReal);
+});
+$('#drawing-zoomIn').click(()=>{
+    currentFunction = new DrawingZoomIn(contextReal);
+});
+$('#drawing-zoomOut').click(()=>{
+    currentFunction = new DrawingZoomOut(contextReal);
+});
+$('#drawing-save').click(()=>{
+    saveAsImage(contextReal);
+});
+$('#drawing-undo').click(()=>{
+    cUndo();
+});
+$('#drawing-redo').click(()=>{
+    cRedo();
+});
+$('#drawing-filter-GY').click(()=>{
+    filter("grayscale");
+});
+$('#drawing-filter-BRUP').click(()=>{
+    filter("brightnessUp");
+});
+$('#drawing-filter-BRDN').click(()=>{
+    filter("brightnessDown");
+});
+$('#drawing-filter-threshold').click(()=>{
+    filter("threshold");
+});
+$('#drawing-filter-convolute-sharpen').click(()=>{
+    filter("convolute-sharpen");
+});
+$('#drawing-filter-convolute-blur').click(()=>{
+    filter("convolute-blur");
+});
+$('#drawing-background').on("change", function(event){
+    setBackground(event);
+});
+
+// ========================
+
+$('#width1').click(()=>{
+    lineWidth= 0.5 ;
+});
+
+$('#width2').click(()=>{ 
+    lineWidth= 1 ;
+});
+
+$('#width3').click(()=>{   
+    lineWidth= 2.5 ;
+});
+
+$('#width4').click(()=>{
+    lineWidth= 5 ;
+});
+
+$('#width5').click(()=>{
+    lineWidth= 10 ;
+});
+
+$('#width6').click(()=>{
+    lineWidth= 15 ;
+});
+
+ $('#dotted').click(()=>{
+    lineDash = (lineDash ? false : true);
+});
+
+
+$(".b1").on("click", function(event){
+    stroke = true;
+    fill = false;
+    console.log("stroke : ", stroke);
+});
+
+$(".b2").on("click", function(){
+    stroke = false;
+    fill = true;
+    console.log("fill : ", fill);
+});
+
+$(".b1, .b2").on("click", function(){
+    $('#color-picker').css("opacity","100")
+});
+
+ $("#canvas-draft").on("click", function(){
+    $('#color-picker').css("opacity","0")
+});
+
+$('#drawing-pencil, #drawing-eraser, #drawing-polygon, #drawing-quadratic-curve').on("click", function(){
+    $('#width1, #width2, #width3, #width4, #width5, #width6').css("opacity","100");
+    $('#dotted').css("opacity","0");
+    lineDash = false; 
+});
+
+$('#drawing-line').on("click", function(){
+    $('#width1, #width2, #width3, #width4, #width5, #width6, #dotted').css("opacity","100")
+});
+
+$('#drawing-rectangle, #drawing-rectangle-hollow, #drawing-circle,#drawing-circle-hollow, #drawing-pencil-rotating-strokes,#drawing-pencil-rotating-stars,#drawing-pencil-random-dots, #drawing-font,#drawing-paint,#drawing-ellipse,#drawing-eye-dropper,#drawing-reset,#drawing-save').on("click", function(){
+    $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");  
+});
+
+$('#drawing-undo, #drawing-redo, #drawing-zoom-in, #drawing-zoom-out, #drawing-reset, #drawing-save, #drawing-background, #toggle, #w1,#w2').on("click", function(){
+    $('#width1, #width2, #width3, #width4, #width5, #width6,#dotted').css("opacity","0");
+});
+
+
+

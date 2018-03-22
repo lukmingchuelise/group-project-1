@@ -20,13 +20,14 @@ body {
   opacity: 0;
 }
 
-
 #color-picker{
   position:absolute;
-  left: 70px; 
+  left: 0;
+  top: 720px;
+  /* left: 70px; */
   background-color: white;
-  height: 160px;
-  width: 195px;
+  height: 130px;
+  width: 155px;
   border: solid 1px #ccc;
   opacity: 0;
   padding: 5px;
